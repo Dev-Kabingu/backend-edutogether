@@ -1,6 +1,6 @@
 const Notification = require("../models/Notification");
-const { io, connectedClients } = require("../index");
-const sendEmail = require("../src/utils/sendEmail");
+
+const sendEmail = require("../utils/sendEmail");
 const User = require("../models/User");
 
 const sendNotification = async (userId, type, content) => {

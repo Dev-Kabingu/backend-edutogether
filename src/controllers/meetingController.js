@@ -1,7 +1,7 @@
 const Meeting = require("../models/Meeting");
 const User = require("../models/User");
 const { sendMeetingEmail } = require("../config/nodemailerConfig");
-const { sendMeetingNotification } = require("../src/utils/socket");
+const { sendMeetingNotification } = require("../utils/socket");
 
 
 exports.createMeeting = async (req, res) => {
